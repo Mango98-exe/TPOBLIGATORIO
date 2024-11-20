@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Tomas ",
+    "apellido": "Capriotti_",
+    "dni": "41334837",
+    "mail": "capriottitomas@gmail.com"
+  },
+  {
+    "nombre": "Claudio",
+    "apellido": "Gonzalez",
+    "dni": "16680176",
+    "email": "gonzaquil4@hotmail.com"
+  },
+  {
+    "nombre": "Gabriel",
+    "apellido": "Sanchez",
+    "dni": "001122334",
+    "email": "cacho.castaña@gmail.com"
+  }
+]
