@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "58c2a881-f4a3-451a-a55d-4dcb9cda2c24",
+		"name": "Coleccion_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39832865"
+	},
+	"item": [
+		{
+			"name": "Get_Prueba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Integrantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/integrantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Integrante_NoEncontrado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/integrantes/12345678",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrantes",
+						"12345678"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Agregar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Gabriel\",\r\n  \"apellido\": \"Sanchez\",\r\n  \"dni\": \"87654321\",\r\n  \"mail\": \"gabrielsancabify@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/integrantes/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrantes",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put_Actualizar_Apellido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apellido\": \"Capriotti_Actualizado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/integrantes/capriottitomas@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrantes",
+						"capriottitomas@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Integrante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/integrantes/87654321",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"integrantes",
+						"87654321"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
