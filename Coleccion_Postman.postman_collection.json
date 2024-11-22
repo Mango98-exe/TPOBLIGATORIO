@@ -20,7 +20,58 @@
 					"port": "3000"
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "RESPUESTA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29-VyrKefCQfhRHi+ri7Of5zf+Pk1Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Nov 2024 18:31:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "¡La API está funcionando correctamente!"
+				}
+			]
 		},
 		{
 			"name": "Get_Integrantes",
@@ -39,7 +90,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "RESPUESTA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/integrantes/12345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"integrantes",
+								"12345678"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "273"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"111-GadCfE7H+L3nOIn5CSoyMIatTMk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Nov 2024 18:32:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nombre\": \"Tomas \",\n        \"apellido\": \"Capriotti\",\n        \"dni\": \"41334837\",\n        \"mail\": \"capriottitomas@gmail.com\"\n    },\n    {\n        \"nombre\": \"Claudio\",\n        \"apellido\": \"Gonzalez\",\n        \"dni\": \"16680176\",\n        \"email\": \"gonzaquil4@hotmail.com\"\n    },\n    {\n        \"nombre\": \"Ana\",\n        \"apellido\": \"Gómez\",\n        \"dni\": \"87654321\",\n        \"mail\": \"ana.gomez@example.com\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Integrante_NoEncontrado",
@@ -59,7 +165,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "RESPUESTA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/integrantes/12345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"integrantes",
+								"12345678"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-clPx+3vbNGLtIjIGU5UEtetagKs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Nov 2024 18:35:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Integrante no encontrado."
+				}
+			]
 		},
 		{
 			"name": "Post_Agregar",
@@ -88,7 +249,71 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "RESPUESTA",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Gabriel\",\r\n  \"apellido\": \"Sanchez\",\r\n  \"dni\": \"87654321\",\r\n  \"mail\": \"gabrielsancabify@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/integrantes/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"integrantes",
+								"agregar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "455"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c7-k0nU2G4QGEWMn3SiQKMgPt1Cq1c\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Nov 2024 18:39:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nombre\": \"Tomas \",\n        \"apellido\": \"Capriotti\",\n        \"dni\": \"41334837\",\n        \"mail\": \"capriottitomas@gmail.com\"\n    },\n    {\n        \"nombre\": \"Claudio\",\n        \"apellido\": \"Gonzalez\",\n        \"dni\": \"16680176\",\n        \"email\": \"gonzaquil4@hotmail.com\"\n    },\n    {\n        \"nombre\": \"Ana\",\n        \"apellido\": \"Gómez\",\n        \"dni\": \"87654321\",\n        \"mail\": \"ana.gomez@example.com\"\n    },\n    {\n        \"nombre\": \"Ana\",\n        \"apellido\": \"Gómez\",\n        \"dni\": \"87654321\",\n        \"mail\": \"ana.gomez@example.com\"\n    },\n    {\n        \"nombre\": \"Gabriel\",\n        \"apellido\": \"Sanchez\",\n        \"dni\": \"87654321\",\n        \"mail\": \"gabrielsancabify@example.com\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Put_Actualizar_Apellido",
@@ -117,7 +342,71 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "RESPUESTA",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apellido\": \"Capriotti_Actualizado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/integrantes/capriottitomas@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"integrantes",
+								"capriottitomas@gmail.com"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69-Xho2oWFpBiMJD18PFsp7NlpT9vw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Nov 2024 18:43:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Tomas \",\n    \"apellido\": \"Capriotti_Actualizado\",\n    \"dni\": \"41334837\",\n    \"mail\": \"capriottitomas@gmail.com\"\n}"
+				}
+			]
 		},
 		{
 			"name": "Delete_Integrante",
@@ -137,7 +426,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "RESPUESTA",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/integrantes/87654321",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"integrantes",
+								"87654321"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"129-9OMOe6Be/9KVm1tDZnB141cqXMw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Nov 2024 18:44:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nombre\": \"Tomas \",\n        \"apellido\": \"Capriotti_Actualizado\",\n        \"dni\": \"41334837\",\n        \"mail\": \"capriottitomas@gmail.com\"\n    },\n    {\n        \"nombre\": \"Claudio\",\n        \"apellido\": \"Gonzalez\",\n        \"dni\": \"16680176\",\n        \"email\": \"gonzaquil4@hotmail.com\"\n    },\n    {\n        \"nombre\": \"Gabriel\",\n        \"apellido\": \"Sanchez\",\n        \"dni\": \"87654321\",\n        \"mail\": \"gabrielsancabify@example.com\"\n    }\n]"
+				}
+			]
 		}
 	]
 }
